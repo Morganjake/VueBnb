@@ -33,3 +33,6 @@ npm run build
 ```sh
 npm run lint
 ```
+
+### Variable Naming
+> We decided that we would use camelCase when naming all of our variables in javascript.
