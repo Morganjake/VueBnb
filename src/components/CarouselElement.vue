@@ -60,7 +60,7 @@ body {
 #cycleRight {
     left: 100%;
     top: 50%;
-    transform: translate(calc(-100% - 10px), 0);
+    transform: translate(calc(-100% - 35px), 0);
 }
 
 </style>
