@@ -1,16 +1,19 @@
 <script setup>
-let homes = await fetch("./json/homes.json")
-let json = await homes.json()
-console.log(json)
+import CarouselElement from "@/components/CarouselElement.vue";
+
+import homes from "../json/homes.json"
+
 </script>
 
 <template>
-    <div>fghfg</div>
+    <CarouselElement :homes="homes"></CarouselElement>
 </template>
 
 <style>
-div {
-    font-size: 100px;
+
+body {
+    margin: 0;
 }
+
 </style>
 
