@@ -18,20 +18,14 @@
 
             </div>
 
-            <div class="searchAddress">
 
-                <input type="text" placeholder="Search Your Address" />
+            <input type="text" placeholder="Search Your Address" />
 
-            </div>
+            <input type="time" placeholder="Check in" />
 
-            <div class="searchContainer">
-
-                <input type="time" placeholder="Check in" />
-
-                <input type="time" placeholder="Check out" />
+            <input type="time" placeholder="Check out" />
 
 
-            </div>
 
         </div>
     </body>
@@ -65,24 +59,29 @@ body{
 
 .navbar {
 
-    display: flex;
+    overflow: hidden;
+    display: grid;
+    grid-template-rows: auto;
+    grid-template-columns: repeat(4, auto);
+    grid-template-areas: "logo menus toggler";
+    column-gap: 20px;
     position: absolute;
-    height: 15%;
     width: 100%;
     background-color: #33423E;
     opacity: 50%;
     align-items: center;
-    justify-content: space-between;
+    justify-content: space-around;
     margin: 0;
+    padding: 0 10px;
 
 }
 
 .logo {
     display: flex;
-    font: 48px playwrite, serif;
-    font-style: normal;
+    font-size: 24px;
     color: #9AFFF9;
-    padding: 10px;
+    padding: 0 15px;
+    font-family: "Playwrite GB S", cursive;
 
 }
 
@@ -93,28 +92,18 @@ body{
     font-size: 17px;
     background-color: transparent;
     color: white;
-    justify-content: right;
 
 }
 
-.searchContainer{
-
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-
-}
-
-.searchContainer input{
+.navbar input[type=time] {
 
     display: flex;
     border: #539987 solid 2px;
     border-radius: 10px;
-    padding: 8px;
+    padding: 8px 2.5pc;
     font-size: 17px;
     background-color: transparent;
     color: white;
-    padding-right: 5pc;
 
 
 }
