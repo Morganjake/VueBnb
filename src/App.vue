@@ -1,5 +1,6 @@
 <script setup>
 import CarouselElement from "@/components/CarouselElement.vue";
+import HeaderElement from '@/components/HeaderElement.vue'
 
 import homes from "../json/homes.json"
 
@@ -7,13 +8,8 @@ import homes from "../json/homes.json"
 
 <template>
 
-    <HeaderElement>
-
-
-
-    </HeaderElement>
-
     <CarouselElement :homes="homes"></CarouselElement>
+    <HeaderElement></HeaderElement>
 </template>
 
 <style>
@@ -24,8 +20,3 @@ body {
 
 </style>
 
-<script setup>
-
-import HeaderElement from '@/components/HeaderElement.vue'
-
-</script>
