@@ -6,6 +6,13 @@ import homes from "../json/homes.json"
 </script>
 
 <template>
+
+    <HeaderElement>
+
+
+
+    </HeaderElement>
+
     <CarouselElement :homes="homes"></CarouselElement>
 </template>
 
@@ -17,3 +24,8 @@ body {
 
 </style>
 
+<script setup>
+
+import HeaderElement from '@/components/HeaderElement.vue'
+
+</script>

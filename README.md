@@ -1,6 +1,11 @@
-# airbnb
+# VueBnB
+- This is a starter project for Jake And Zander, at the web development team at utilita. 
+- We where given the task to develop a website with vite and vue
+that will be very similar to a airbnb website.
 
-This template should help get you started developing with Vue 3 in Vite.
+### **Variable Naming**
+> We decided that we would use camelCase when
+naming all of our variables in javascript.
 
 ## Recommended IDE Setup
 
@@ -34,5 +39,4 @@ npm run build
 npm run lint
 ```
 
-### Variable Naming
-> We decided that we would use camelCase when naming all of our variables in javascript.
+
