@@ -1,28 +1,18 @@
 
 
 <template>
-<head>
 
-    <title>VueBnB</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+<div class="navbar">
 
-</head>
-    <body>
-        <div class="navbar">
+    <p class="logo"> VueBnB</p>
 
-            <p class="logo">VueBnB</p>
+    <input type="text" placeholder="Search Your Address" />
 
-            <input type="text" placeholder="Search Your Address" />
+    <input type="time" placeholder="Check in" />
 
-            <input type="time" placeholder="Check in" />
+    <input type="time" placeholder="Check out" />
 
-            <input type="time" placeholder="Check out" />
-
-        </div>
-    </body>
-
+</div>
 
 </template>
 
@@ -71,6 +61,7 @@ body{
 }
 
 .logo {
+
     display: flex;
     font-size: 34px;
     color: #9AFFF9;
@@ -82,20 +73,29 @@ body{
 }
 
 .navbar input[type=text] {
+
     border: white solid 2px;
-    border-radius: 10px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 30px;
     padding: 8px;
     font-size: 17px;
     background-color: transparent;
     color: white;
     margin: 0;
+
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar input[type=time] {
 
     display: flex;
     border: white solid 2px;
-    border-radius: 10px;
+    border-radius: 30px;
     padding: 8px 2.5pc;
     font-size: 17px;
     background-color: transparent;
