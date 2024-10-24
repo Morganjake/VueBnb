@@ -1,3 +1,38 @@
+<script setup>
+function fetchJSON() {
+    fetch("/json/homes.json")
+        .then((res) => {
+            if (!res.ok) {
+                throw new Error(`HTTP error status: ${res.status}`);
+            }
+            return res.json();
+        })
+        .then((data) => {
+            const locations = getLocations(data);
+            console.log(locations);
+        })
+        .catch((error) => {
+            console.error("Unable to fetch data:", error);
+        });
+}
+    function getLocations(data) {
+        if (!Array.isArray(data)) {
+            throw new Error("Expected an array");
+}
+
+    return data.map(item => ({
+
+        address: item.location.address,
+        city: item.location.city,
+        state: item.location.state,
+        country: item.location.country
+
+}));
+}
+fetchJSON();
+
+</script>
+
 <template>
 
 <div class="container"></div>
@@ -6,7 +41,7 @@
 
     <p class="title">A Quiet House in the Middle of Nowhere</p>
 
-    <p class="address">302 Hanson Ranch Rd Beaver Creek Colorado USA</p>
+    <p class="address"> address</p>
 
     <p class="info">7 guests · 3 beds · 4 rooms</p>
 
@@ -59,7 +94,7 @@
     width: 100%;
     max-width: 30pc;
     height: 100%;
-    max-height: 14rem;
+    max-height: 13.5rem;
 
     font-family: "Roboto", sans-serif;
     backdrop-filter: blur(50px);
@@ -73,8 +108,6 @@
     text-align: center;
 
     color: #9AFFF9;
-
-
 }
 
 .info{
@@ -112,8 +145,4 @@
 
 </style>
 
-<script setup>
 
-
-
-</script>
