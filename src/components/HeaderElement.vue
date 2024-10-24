@@ -1,35 +1,18 @@
 
 
 <template>
-<head>
 
-    <title>VueBnB</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playwrite+GB+S:ital,wght@0,100..400;1,100..400&display=swap" rel="stylesheet">
+<div class="navbar">
 
-</head>
-    <body>
-        <div class="navbar">
+    <p class="logo"> VueBnB</p>
 
-            <div class="logo">
+    <input type="text" placeholder="Search Your Address" />
 
-                <p>VueBnB</p>
+    <input type="time" placeholder="Check in" />
 
-            </div>
+    <input type="time" placeholder="Check out" />
 
-
-            <input type="text" placeholder="Search Your Address" />
-
-            <input type="time" placeholder="Check in" />
-
-            <input type="time" placeholder="Check out" />
-
-
-
-        </div>
-    </body>
-
+</div>
 
 </template>
 
@@ -67,43 +50,58 @@ body{
     column-gap: 20px;
     position: absolute;
     width: 100%;
-    background-color: #33423E;
-    opacity: 50%;
+    background-color: transparent;
     align-items: center;
     justify-content: space-around;
     margin: 0;
     padding: 0 10px;
+    backdrop-filter: blur(100px);
+
 
 }
 
 .logo {
+
     display: flex;
-    font-size: 24px;
+    font-size: 34px;
     color: #9AFFF9;
-    padding: 0 15px;
+    //padding: 0 15px;
     font-family: "Playwrite GB S", cursive;
+    margin: 10px;
+    text-align: center;
 
 }
 
 .navbar input[type=text] {
-    border: #539987 solid 2px;
-    border-radius: 10px;
+
+    border: white solid 2px;
+    font-family: "Roboto", sans-serif;
+    border-radius: 30px;
     padding: 8px;
     font-size: 17px;
     background-color: transparent;
     color: white;
+    margin: 0;
 
+}
+
+.roboto-regular {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .navbar input[type=time] {
 
     display: flex;
-    border: #539987 solid 2px;
-    border-radius: 10px;
+    border: white solid 2px;
+    border-radius: 30px;
     padding: 8px 2.5pc;
     font-size: 17px;
     background-color: transparent;
     color: white;
+    color-scheme: dark;
+    margin: 0;
 
 
 }
